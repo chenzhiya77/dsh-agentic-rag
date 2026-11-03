@@ -1,19 +1,19 @@
-# Harness RAG · DSH 插件
+# Agentic RAG · DSH 插件
 
 > **DeepSeek Harness（DSH）插件**：一套内置本地知识库——从文档 / 表格 / 视频的解析与切分，到实体图谱、wiki 条目、三路检索、文档感知、知识库管理与检索质量评测；默认自带本地知识服务（便携 Python、Qdrant、引擎），`backendUrl` 非空时走外部服务。
 >
-> **Harness RAG 是一套全链路双向联动的知识库。** 它以一套完整的对象模型为基座——文档、切片、实体与 wiki 条目都带完整的身份、来源、关系、状态与生命周期；每个下游对象都能指回它的源切片，每个索引项都能落回它的对象。向量、图谱、wiki 是这套对象的三种表示：写入时，编辑 / 重抽 / 删除 / 新增沿派生关系向下传播；读取时，三路检索沿来源关系向上回溯，再由文档感知工具枚举、定位、读回。
+> **这是一套全链路双向联动的 Agentic RAG 知识库。** 它以一套完整的对象模型为基座——文档、切片、实体与 wiki 条目都带完整的身份、来源、关系、状态与生命周期；每个下游对象都能指回它的源切片，每个索引项都能落回它的对象。向量、图谱、wiki 是这套对象的三种表示：写入时，编辑 / 重抽 / 删除 / 新增沿派生关系向下传播；读取时，三路检索沿来源关系向上回溯，再由文档感知工具枚举、定位、读回。
 >
 > **为什么是三路**：向量负责内容匹配、图谱负责信息关系、wiki 负责条目级线索；库里的文档与 wiki 条目可以直接枚举，不拿检索硬凑。命中切片随工具结果返回；绑定知识库的会话还会收到检索纪律（向量保底 / 图谱路 / 读取上限 / 拒答），人格与呈现仍归宿主。
 
 https://github.com/user-attachments/assets/df813a97-2071-4c37-abc1-9d1423c2db37
 
-<img src="docs/assets/rag/overview.png" width="1000" alt="Harness RAG 全链路概览：摄取 → 加工 → 三路检索">
+<img src="docs/assets/rag/overview.png" width="1000" alt="Agentic RAG 全链路概览：摄取 → 加工 → 三路检索">
 
 ## 📋 目录
 
 - [插件由什么组成](#-插件由什么组成)
-- [Harness RAG 提供什么](#-harness-rag-提供什么)
+- [Agentic RAG 提供什么](#-agentic-rag-提供什么)
 - [效果展示](#-效果展示)
 - [快速开始](#-快速开始)
 - [规模（实测）](#-规模实测)
@@ -31,7 +31,7 @@ https://github.com/user-attachments/assets/df813a97-2071-4c37-abc1-9d1423c2db37
 
 两半各自声明依赖，不能互吃对面世界的服务：Host 半持有 `hrag_*` 工具、面板数据桥与摄取后台任务（含运行时的准备、启动与守护），Client 半只做右栏「知识库」tab 的渲染。
 
-### Harness RAG（内置引擎）
+### Agentic RAG（内置引擎）
 
 解析、切片、嵌入、索引、图谱、wiki、评测与存储全部在 knowledge 服务侧。默认由插件托管：运行时落在 `<root>/runtime/<version>/`，数据落在 `<root>/state/`；`backendUrl` 非空时改走外部服务，不下载、不起进程。托管运行时的准备、版本化升级与回滚见[操作手册](docs/plugin-manual.md)的「升级与回滚」。
 
@@ -44,7 +44,7 @@ https://github.com/user-attachments/assets/df813a97-2071-4c37-abc1-9d1423c2db37
 
 ---
 
-## 🔍 Harness RAG 提供什么
+## 🔍 Agentic RAG 提供什么
 
 六块：摄取与解析、加工与联动、检索与文档感知、面板与可视化、质量闭环、模型配置与智能识别。完整参数与边界见[操作手册](docs/plugin-manual.md)。
 

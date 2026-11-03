@@ -1,8 +1,8 @@
 {
   "format": 1,
   "title": {
-    "en": "Harness RAG",
-    "zh": "Harness RAG"
+    "en": "Agentic RAG",
+    "zh": "Agentic RAG"
   },
   "description": {
     "en": "Knowledge-base retrieval for DeepSeek Harness: three-path search, document continuation reading and a knowledge-base management panel.",
@@ -12,8 +12,8 @@
     {
       "name": "dsh-harness-rag",
       "title": {
-        "en": "Harness RAG",
-        "zh": "Harness RAG"
+        "en": "Agentic RAG",
+        "zh": "Agentic RAG"
       },
       "description": {
         "en": "Three-path retrieval (hybrid/graph/wiki), document continuation reading, and a knowledge-base management panel over a local knowledge service the plugin provisions itself.",

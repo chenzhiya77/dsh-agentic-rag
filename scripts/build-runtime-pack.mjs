@@ -677,14 +677,14 @@ function notices({ pythonVersion, configVersion, ffmpegVersion, ffmpegSource, ff
   const projectLicense = readFileSync(join(PACKAGE_ROOT, 'LICENSE'), 'utf8').trim()
   return `# Runtime pack notices
 
-This archive is unpacked by the Harness RAG plugin under
+This archive is unpacked by the Agentic RAG plugin under
 \`<DSH_HOME>/harness-rag/runtime/${runtimeVersion}/\`. It bundles:
 
-## Harness RAG engine (original work, MIT)
+## Agentic RAG engine (original work, MIT)
 
 The RAG capabilities bundled in \`engine/\` (document parsing and chunking,
 embedding and indexing, three-path retrieval, graph and wiki generation, and
-evaluation) are original Harness RAG work. The engine also bundles a
+evaluation) are original Agentic RAG work. The engine also bundles a
 third-party harness framework; the MIT notice below applies to those framework
 portions, not to the RAG code. The seeded configuration uses
 \`config_version: ${configVersion}\`.

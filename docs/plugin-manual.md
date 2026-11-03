@@ -76,9 +76,9 @@ dsh plugin --profile <name> add dsh-harness-rag
 
 **开发态本地包**：仅开发/验收用 `DSH_HARNESS_RAG_PACK=<本地 zip 绝对路径>` 覆盖下载，发布版不启用；本地包同样做空间检查与 manifest 的 `runtimeVersion`/`configVersion` 校验。`runtime.json` 已回填 GitHub Release 下载地址（v0.1.4 的 `0.1.0-4`）与 `size`/`sha256`；本地包只用于开发/验收覆盖。
 
-## 外部模式（自带 Harness RAG 服务）
+## 外部模式（自带 Agentic RAG 服务）
 
-`backendUrl` 非空时完全走外部服务，行为与旧版一致（不下载、不起进程）。插件只需要 **Harness RAG knowledge 服务**（`harness-rag` 仓）：只挂知识库 API 的单进程服务。
+`backendUrl` 非空时完全走外部服务，行为与旧版一致（不下载、不起进程）。插件只需要 **Agentic RAG knowledge 服务**（`harness-rag` 仓）：只挂知识库 API 的单进程服务。
 
 ```sh
 # 最小形态：只起 knowledge 服务（端口 8020）；会先同步依赖（含 UMAP 投影 extra）

@@ -58,7 +58,7 @@ window.__ModuleLoader__.load({
 
     const zh = {
       'tab.title': '知识库',
-      'tab.description': 'Harness RAG：三路检索、文档续读、知识库管理',
+      'tab.description': 'Agentic RAG：三路检索、文档续读、知识库管理',
       'shell.loading': '正在加载知识库…',
       'shell.errorTitle': '知识库面板加载失败',
       'shell.retry': '重试',
@@ -76,7 +76,7 @@ window.__ModuleLoader__.load({
       'rt.change': '更改…',
       'rt.start': '开始准备',
       'rt.connectExisting': '连接已有服务',
-      'rt.connectHint': '打开「插件 → Harness RAG → backendUrl」，填入已有服务地址。',
+      'rt.connectHint': '打开「插件 → 知识库 → backendUrl」，填入已有服务地址。',
       'rt.previousBroken': '上次的位置不可用',
       'rt.useDefault': '改回默认',
       'rt.reasonMissing': '目录已不存在',
@@ -1057,7 +1057,7 @@ window.__ModuleLoader__.load({
     }
     const en = {
       'tab.title': 'Knowledge Base',
-      'tab.description': 'Harness RAG: three-path retrieval, document continuation, knowledge-base management',
+      'tab.description': 'Agentic RAG: three-path retrieval, document continuation, knowledge-base management',
       'shell.loading': 'Loading knowledge bases…',
       'shell.errorTitle': 'The knowledge panel failed to load',
       'shell.retry': 'Retry',
@@ -1075,7 +1075,7 @@ window.__ModuleLoader__.load({
       'rt.change': 'Change…',
       'rt.start': 'Start setup',
       'rt.connectExisting': 'Use an existing service',
-      'rt.connectHint': 'Open "Plugins → Harness RAG → backendUrl" and enter the existing service address.',
+      'rt.connectHint': 'Open "Plugins → Knowledge Base → backendUrl" and enter the existing service address.',
       'rt.previousBroken': 'The previous location is unavailable',
       'rt.useDefault': 'Use the default',
       'rt.reasonMissing': 'the directory no longer exists',

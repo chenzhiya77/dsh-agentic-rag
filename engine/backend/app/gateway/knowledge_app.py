@@ -147,8 +147,8 @@ def create_app() -> FastAPI:
     openapi_url = "/openapi.json" if config.enable_docs else None
 
     app = FastAPI(
-        title="Harness RAG Knowledge Service",
-        description="Minimal knowledge-base API for the DSH harness-rag plugin.",
+        title="Agentic RAG Knowledge Service",
+        description="Minimal knowledge-base API for the DSH knowledge-base plugin.",
         version="0.1.0",
         lifespan=lifespan,
         docs_url=docs_url,

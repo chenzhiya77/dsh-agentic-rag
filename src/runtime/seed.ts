@@ -22,7 +22,7 @@ const quote = (value: string): string => `'${value.replace(/'/g, "''")}'`
 const databaseBlock = (sqliteDir: string): string =>
   [
     '',
-    '# Harness RAG runtime: the knowledge SQLite file lives under the runtime root.',
+    '# Agentic RAG runtime: the knowledge SQLite file lives under the runtime root.',
     'database:',
     '  backend: sqlite',
     `  sqlite_dir: ${quote(sqliteDir)}`,

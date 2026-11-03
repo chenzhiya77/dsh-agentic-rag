@@ -1,12 +1,12 @@
 # Engine upstream and fork record
 
 `engine/` is this repository's backend directory. It began as a one-time
-snapshot of the Harness RAG engine; since 2026-10-25 it is **forked** and edited
+snapshot of the Agentic RAG engine; since 2026-10-25 it is **forked** and edited
 here directly. There is no whole-tree re-vendor and no submodule.
 
 | Field | Value |
 | --- | --- |
-| Source repository | Harness RAG engine (`E:\app\python\agent\harness-rag`, local) |
+| Source repository | Agentic RAG engine (`E:\app\python\agent\harness-rag`, local) |
 | Source branch | `feat/rag-knowledge-base` |
 | Base commit | `b34b2d5728509117bf20c3e64f6beab6ea28521b` (`b34b2d572`) |
 | Base commit date | 2026-10-24 |

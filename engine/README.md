@@ -1,4 +1,4 @@
-# Harness RAG 知识服务（内置引擎）
+# Agentic RAG 知识服务（内置引擎）
 
 DSH 插件 `dsh-harness-rag` 的内置引擎：只提供知识库 HTTP API。
 
