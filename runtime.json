@@ -9,7 +9,7 @@
       "qdrantVersion": "1.20.0",
       "configVersion": 44,
       "urls": [
-        "https://github.com/chenzhiya77/dsh-harness-rag/releases/download/v0.1.4/harness-rag-runtime-win32-x64-0.1.0-4.zip"
+        "https://github.com/chenzhiya77/dsh-agentic-rag/releases/download/v0.1.4/harness-rag-runtime-win32-x64-0.1.0-4.zip"
       ],
       "size": 493635371,
       "unpackedSize": 1279242125,

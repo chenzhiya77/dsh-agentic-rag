@@ -10,7 +10,7 @@ import { registerToolGating } from './tool_gating.ts'
 import { createSessionTraceStore } from './session_traces.ts'
 import { createRuntimeBridge, type BridgeHost } from './runtime/bridge.ts'
 
-export const name = 'dsh-harness-rag'
+export const name = 'dsh-agentic-rag'
 // Host half only: the host world provides `tools` but never `slots` — UI
 // registration lives in the browser half (client.js). `subprocess`,
 // `webServer`, and `directoryPicker` are looked up lazily by the runtime

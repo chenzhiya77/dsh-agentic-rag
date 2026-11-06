@@ -1,4 +1,4 @@
-# dsh-harness-rag knowledge agent preset (T2 Task 5, optional).
+# dsh-agentic-rag knowledge agent preset (T2 Task 5, optional).
 #
 # Declares one `@deepseek-ai/dsh-agent-preset` row: sessions that select
 # `harness-rag-knowledge` mount this plugin's tool pack inside the preset's own
@@ -19,7 +19,7 @@
         order: 20
         plugins:
           - id: harness-rag-tools
-            name: 'dsh-harness-rag'
+            name: 'dsh-agentic-rag'
             config:
               backendUrl: 'http://127.0.0.1:8020'
               apiToken: ''

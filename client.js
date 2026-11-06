@@ -1,4 +1,4 @@
-// Browser half of dsh-harness-rag. Loaded by the Web Client through the
+// Browser half of dsh-agentic-rag. Loaded by the Web Client through the
 // deployment module factory format (see DSH cordis-plugin-development skill,
 // templates/decoration/client.js). One self-contained plain-JS file by
 // decision (T3 plan Task 0 ⑥): the host serves exactly one client.js per
@@ -15,7 +15,7 @@ function ragSmartDimensionDecision(recognizedDimension, recognizedProvider, form
 }
 
 window.__ModuleLoader__.load({
-  id: 'dsh-harness-rag',
+  id: 'dsh-agentic-rag',
   factory(require) {
     const React = require('react')
     const h = React.createElement
@@ -20887,7 +20887,7 @@ window.__ModuleLoader__.load({
     ]
     const RAG_PARSE_VERSION_OPTIONS = ['', 'pipeline', 'vlm']
     // 项目仓库入口：静态公开地址，不读配置、不拼 URL。
-    const RAG_REPOSITORY_URL = 'https://github.com/chenzhiya77/dsh-harness-rag'
+    const RAG_REPOSITORY_URL = 'https://github.com/chenzhiya77/dsh-agentic-rag'
     // 厂商控制台入口（spec §4.1）：静态 https 白名单，不读配置、不拼 URL。
     const RAG_PROVIDER_CONSOLES = {
       dashscope: { vendorKey: 'vendor.dashscope', url: 'https://bailian.console.aliyun.com/' },
@@ -23198,7 +23198,7 @@ window.__ModuleLoader__.load({
           const ctx = pluginNavHolder.ctx
           const navigation = ctx && typeof ctx.get === 'function' ? ctx.get('pluginNavigation') : null
           if (navigation && typeof navigation.openBundle === 'function') {
-            navigation.openBundle('dsh-harness-rag')
+            navigation.openBundle('dsh-agentic-rag')
             opened = true
           }
         } catch (cause) {

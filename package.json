@@ -1,7 +1,7 @@
 {
-  "name": "dsh-harness-rag",
+  "name": "dsh-agentic-rag",
   "description": "Agentic RAG for DeepSeek Harness: three-path retrieval (hybrid/graph/wiki), document continuation reading, and a knowledge-base management panel over the built-in or external knowledge service.",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "icon": "./icon.svg",
   "type": "module",
   "main": "./lib/index.js",
@@ -20,9 +20,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chenzhiya77/dsh-harness-rag.git"
+    "url": "git+https://github.com/chenzhiya77/dsh-agentic-rag.git"
   },
-  "homepage": "https://github.com/chenzhiya77/dsh-harness-rag#readme",
+  "homepage": "https://github.com/chenzhiya77/dsh-agentic-rag#readme",
   "files": [
     "icon.svg",
     "lib",

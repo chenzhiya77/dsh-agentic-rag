@@ -40,7 +40,7 @@ https://github.com/user-attachments/assets/df813a97-2071-4c37-abc1-9d1423c2db37
 - **工具按会话挂载**：六件 `hrag_*` 只在会话绑定知识库后挂进该会话；解绑即从该会话的工具表消失，未绑定的会话没有这些工具。
 - **agent 只读**：不存在 agent 侧的写入工具——上传、删除、触发解析、生成 wiki 都是人类操作。
 - **数据落点**：托管模式的数据与 token 落在运行根（`state/`），面板不显示 token；外部模式的数据由外部服务持有，用 `apiToken` 保护知识服务。
-- **命名空间隔离**：工具名 `hrag_*`、槽位标识 `dsh-harness-rag` / `harness-rag`、localStorage `hrag-*`、代理路由 `/dsh-harness-rag/api`，与其他插件零冲突面。
+- **命名空间隔离**：包名 `dsh-agentic-rag`；槽位、tab 与路由等兼容标识沿用旧值（`dsh-harness-rag` / `harness-rag`）、localStorage `hrag-*`、代理路由 `/dsh-harness-rag/api`，与其他插件零冲突面，已安装数据无需迁移。
 
 ---
 
@@ -200,17 +200,17 @@ AI 按实体资格自动沉淀「生成条目」；用户自建的「我的条�
 
 ## 🚀 快速开始
 
-GitHub 与 npm 安装均可用（GitHub 钉 tag `v0.1.4`，不要跟 main）：
+GitHub 与 npm 安装（v0.2.0；GitHub 钉 tag，不要跟 main）：
 
 ```sh
 # 本地目录（开发安装，改码即被读取）
 dsh plugin --profile <name> add link:<本仓绝对路径>
 
 # GitHub（钉 tag；运行时包从同仓 Release 下载）
-dsh plugin --profile <name> add git+https://github.com/chenzhiya77/dsh-harness-rag.git#v0.1.4
+dsh plugin --profile <name> add git+https://github.com/chenzhiya77/dsh-agentic-rag.git#v0.2.0
 
-# npm（已发布 0.1.4）
-dsh plugin --profile <name> add dsh-harness-rag
+# npm（0.2.0）
+dsh plugin --profile <name> add dsh-agentic-rag
 ```
 
 三种方式装的是同一份插件代码，首次运行面完全一致。装完重启该 profile 的 DSH，打开右栏「知识库」tab：
@@ -246,8 +246,8 @@ dsh plugin --profile <name> add dsh-harness-rag
 | 功能模型设置（智能识别 / 厂商入口 / 重建索引） | 已实装 |
 | 摄取后台任务 | 已实装 |
 | 运行时准备 / 就绪 / 重试 / 版本化升级 / 回滚 / 嵌入模型引导 | 已实装 |
-| GitHub 安装入口 | 已发布（v0.1.4） |
-| npm 安装入口 | 已发布（0.1.4） |
+| GitHub 安装入口 | 待发布（v0.2.0） |
+| npm 安装入口 | 待发布（0.2.0） |
 
 <p align="center">
   <img src="docs/assets/pet/parrot-strip.gif" width="996" alt="">
